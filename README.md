@@ -35,7 +35,7 @@ import numpy as np
 hkipc = HKIPcamera.HKIPCamera()
 
 # login
-login_success = hkipc.login(ip, name, password, port, channel, streamtype, linkmode=link_mode, device_id = device_id, bufferize=5)
+login_success = hkipc.login(ip, name, pw, port, channel, streamtype, linkmode=link_mode, device_id = device_id, bufferize=5)
 
 # read frame and cast to ndarray
 frame = hkipc.getframe()
